@@ -30,7 +30,7 @@ app.get("*", (req, res) => {
 
 // Connect to MongoDB and start server
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect(process.env.MONGODB_URI)
   .then(() => {
     console.log("✅ MongoDB connected");
     if (!process.env.VERCEL) {
